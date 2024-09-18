@@ -1,10 +1,8 @@
-import { Sprites } from '@domain/entities'
-
 export interface Pokemon {
     id: number
-    order: number
     name: string
-    sprites: {
-        other: Sprites
-    }
+    height: number
+    weight: number
+    spriteDefault: string
+    spriteShiny?: string
 }
